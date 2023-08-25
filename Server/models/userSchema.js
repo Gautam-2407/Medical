@@ -6,10 +6,6 @@ const userSchema = new mongoose.Schema({
         trim:true,
         required: true,
     },
-    age:{
-        type : Number ,
-        required: true,
-    },
     phone:{
         type :String  ,
         unique: true,
@@ -39,33 +35,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         required: true,
-    },
-    idproff:{
-        type: Object,
-        unique:true,
-        required:true,
-    },
-    license:{
-        type: String,
-        unique: true,
-        required: true,
-    },
-    exp:{
-        type: Number,
-        unique: true,
-        required: true,
-    },
-    resume:{
-        type: Object,
-        unique: true,
-        required: true,
-    },
-    specialist:{
-        type: String,
-        unique: true,
-        required: true,
-    },
-    
+    }
+
 });
 
 const users = new mongoose.model("users",userSchema);

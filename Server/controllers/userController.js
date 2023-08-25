@@ -1,14 +1,14 @@
-const user = require("../models/userSchema");
+const users = require("../models/userSchema");
 
 exports.userregister = async (req, res) => {
-    const {name}=req.body;
+    const {name, phone, email,dob, gender,history,disease }=req.body;
 
-    if (!name){
+    if (!name || !phone || !email|| !dob|| !gender|| !history|| !disease){
       return  res.status(401).json({message:"Please enter your name"})
     }
 
     try{
-      const preuser = await users.findOne({name:name});
+      const preuser = await users.findOne({phone:phone});
 
       if (preuser){
         return   res.status(200).send("User already exist")
@@ -16,6 +16,13 @@ exports.userregister = async (req, res) => {
       else{
         const newuser = new users({
           name,
+          phone,
+          email,
+          dob,
+          gender,
+          history,
+          disease,
+          
         });
         const storeData= await newuser.save();
         res.status(200).json(storeData);
