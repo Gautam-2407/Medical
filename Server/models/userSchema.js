@@ -1,28 +1,38 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    username: {
+    name: {
         type: String,
         trim:true,
+        required: true,
+    },
+    age:{
+        type : Number ,
+        required: true,
+    },
+    phone:{
+        type :String  ,
+        unique: true,
         required: true,
     },
     email:{
         type: String,
         unique: true,
-        validator(value){
-            if(!validator.isEmail(value)){
-                throw new Error("Not valid Email")
-            }
-        },
         required: true,
     },
-    password:{
+    dob:{
+        type: String,
+        unique: true,
+        required: true,
+    },
+    gender:{
         type: String,
         unique: true,
         required: true,
     }
+    
 });
 
-const users = new mongoose.model("Stream_ui",userSchema);
+const users = new mongoose.model("users",userSchema);
 
 module.exports = users;
