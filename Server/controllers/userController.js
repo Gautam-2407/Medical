@@ -22,7 +22,7 @@ exports.userregister = async (req, res) => {
           gender,
           history,
           disease,
-          
+
         });
         const storeData= await newuser.save();
         res.status(200).json(storeData);
@@ -30,30 +30,6 @@ exports.userregister = async (req, res) => {
     } catch (error) {
         res.status(400).json({ error: "Invalid Details", error });
       }
-  // const { username, email, password } = req.body;
-  
-    // if (!username || !email || !password) {
-    //   res.status(400).json({ error: "Fill all Fields" });
-    // }
-  
-    // try {
-    //   const preuser = await Stream_ui.findOne({ username: username });
-  
-    //   if (preuser) {
-    //     res.status(400).json({ error: "User already exist" });
-    //   } else {
-    //     const userregister = new Stream_ui({
-    //       username,
-    //       email,
-    //       password,
-    //     });
-  
-    //     const storeData = await userregister.save();
-    //     res.status(200).json(storeData);
-    //   }
-    // } catch (error) {
-    //   res.status(400).json({ error: "Invalid Details", error });
-    // }
   };
   
   
