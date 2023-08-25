@@ -29,7 +29,42 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         required: true,
-    }
+    },
+    history:{
+        type: String,
+        unique: true,
+        required: true,
+    },
+    disease:{
+        type: String,
+        unique: true,
+        required: true,
+    },
+    idproff:{
+        type: Object,
+        unique:true,
+        required:true,
+    },
+    license:{
+        type: String,
+        unique: true,
+        required: true,
+    },
+    exp:{
+        type: Number,
+        unique: true,
+        required: true,
+    },
+    resume:{
+        type: Object,
+        unique: true,
+        required: true,
+    },
+    specialist:{
+        type: String,
+        unique: true,
+        required: true,
+    },
     
 });
 

@@ -1,7 +1,29 @@
 const user = require("../models/userSchema");
 
 exports.userregister = async (req, res) => {
-    // const { username, email, password } = req.body;
+    const {name}=req.body;
+
+    if (!name){
+      return  res.status(401).json({message:"Please enter your name"})
+    }
+
+    try{
+      const preuser = await users.findOne({name:name});
+
+      if (preuser){
+        return   res.status(200).send("User already exist")
+      }
+      else{
+        const newuser = new users({
+          name,
+        });
+        const storeData= await newuser.save();
+        res.status(200).json(storeData);
+      }
+    } catch (error) {
+        res.status(400).json({ error: "Invalid Details", error });
+      }
+  // const { username, email, password } = req.body;
   
     // if (!username || !email || !password) {
     //   res.status(400).json({ error: "Fill all Fields" });
@@ -25,7 +47,6 @@ exports.userregister = async (req, res) => {
     // } catch (error) {
     //   res.status(400).json({ error: "Invalid Details", error });
     // }
-    console.log(user)
   };
   
   
