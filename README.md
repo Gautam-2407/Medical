@@ -3,7 +3,7 @@ In the project directory, you can run:
 ### Client (Frontend)
 
 ### `npm install`
-### `npm run build`
+### `npm start`
 
 ### Server (Backend)
 
