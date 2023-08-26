@@ -1,7 +1,7 @@
 import React from 'react'
  import { useState } from 'react';
 import './login.css'
-import { registerfunction } from '../Service/api';
+import { registerfunction } from '../../Service/api';
 const Login = () => {
 
     const [username, setusername]=useState("");
@@ -37,7 +37,7 @@ const Login = () => {
                 <div className="login-logo">
                     <p>MedicalMaster</p>
                 </div>
-                <div className="login-head" style={{marginTop:"70px", marginLeft:"70px"}}>
+                <div className="login-head" style={{marginTop:"70px", marginLeft:"150px"}}>
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
