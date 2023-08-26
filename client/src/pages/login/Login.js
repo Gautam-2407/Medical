@@ -1,7 +1,7 @@
 import React from 'react'
  import { useState } from 'react';
 import './login.css'
-import { registerfunction } from '../../Service/api';
+import { loginfunction } from '../../Service/api';
 const Login = () => {
 
     const [username, setusername]=useState("");
@@ -13,7 +13,7 @@ const Login = () => {
          console.log("button clicked");
         try{
             
-            const response = await registerfunction( username, contact);
+            const response = await loginfunction( username, contact);
             console.log(response);
              
             

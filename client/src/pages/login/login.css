@@ -24,7 +24,8 @@ height: 100vh;
     margin-top:-160px;
     font-size:1.5rem;
     margin-left: -75px;
-    text-shadow: 2px 6px 2px green;
+    text-shadow: 2px 6px 4px red;
+    font-weight: bolder;
 }
 
 .login-head{
@@ -33,7 +34,7 @@ height: 100vh;
 
 .login-right{
     margin-top:150px;
-        margin-left:100px;
+    margin-left:100px;
     align-items: center;
 }
 
@@ -42,7 +43,6 @@ height: 100vh;
 .login-right > h2{
     font-size: 3rem;
     text-align: center;
-    
     color:var(--header-color1)
 }
 .login-right > h5{
@@ -86,10 +86,10 @@ height: 100vh;
     border: 1px solid #EDEDED;
 }
 
-.button-field{
-     
+.button-field{     
     margin-top:30px;
 }
+
 .button-field > input{
    width:320px;
    height:40px;
