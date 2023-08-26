@@ -37,14 +37,14 @@ const Login = () => {
                 <div className="login-logo">
                     <p>MedicalMaster</p>
                 </div>
-                <div classname="login-head" style={{marginTop:"70px", marginLeft:"70px"}}>
+                <div className="login-head" style={{marginTop:"70px", marginLeft:"70px"}}>
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
                         <input type="text" name="username" placeholder='Enter your username' value={username}  onChange={(e)=>setusername(e.target.value)}/>
                     </div>
                     <div className="input-field1">
-                        <input type="tel" name="contact" placeholder='Enter your Number' value={contact} onChange={(e)=>setcontact(e.target.value)} />
+                        <input type="tel" name="contact" maxLength={10} placeholder='Enter your Number' value={contact} onChange={(e)=>setcontact(e.target.value)} />
                     </div>
                     <div className="gogle-input">
                         <input type="submit" value="Login with GooGle" />
