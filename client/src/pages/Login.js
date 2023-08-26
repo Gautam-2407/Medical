@@ -18,18 +18,18 @@ const Login = () => {
 
     return (
         <div className="login-container">
-
             <div className="login-wrapper">
+                <div className="login">
                 <div className='login-left'>
-                    <h1>Test</h1>
+                    <h4>Sing in</h4>
                 </div>
-                
+                </div>
 
                 <div className='login-right'>
-               
                 <div className="login-logo">
                     <p>MedicalMaster</p>
                 </div>
+                <div classname="login-head">
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
@@ -45,7 +45,7 @@ const Login = () => {
                      <input type="submit"   name="submit" value="Login"   />
                      <p>Create your Account?</p>
                     </div>
-        
+                    </div>
                 </div>
 
             </div>
