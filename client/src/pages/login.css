@@ -4,6 +4,7 @@
     --secondary-color: #6c757d;
     --button-background:#EB4335;
     --header-color: #565657;
+    --header-color1:#1C1B1C;
   }
 
 
@@ -26,6 +27,7 @@ height: 100vh;
 .login-right > h2{
     font-size: 3rem;
     text-align: center;
+    color:var(--header-color1)
 }
 .login-right > h5{
     font-size:1rem;
