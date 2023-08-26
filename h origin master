@@ -1,0 +1,91 @@
+[33mcommit 21f6ec02f51a0ab8cbf05931776f80c280d8c105[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 8ba5435 96f32ab
+Author: mavmodz <maverickjetman07@gmail.com>
+Date:   Sat Aug 26 14:48:11 2023 +0530
+
+    Merge branch 'register-page'
+
+[33mcommit 96f32ababe52ab808b0f09e59183265036fcc50e[m[33m ([m[1;31morigin/register-page[m[33m, [m[1;32mregister-page[m[33m)[m
+Author: mavmodz <maverickjetman07@gmail.com>
+Date:   Sat Aug 26 13:54:27 2023 +0530
+
+    minor updates
+
+[33mcommit 8ba5435ccd163f25764b9567600ea55dfdbe2c52[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d85f43b 361f7cf
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Sat Aug 26 12:37:24 2023 +0530
+
+    Merge branch 'schema' of https://github.com/Gautam-2407/Medical
+
+[33mcommit 361f7cfbaf999cc7c892ddbd219cdb4a3507dd07[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Sat Aug 26 12:35:34 2023 +0530
+
+    drSchema made
+
+[33mcommit cdde918b098849f930b882e5ddd79b86a7e7abae[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 18:43:06 2023 +0530
+
+    work on login
+
+[33mcommit 89dd7e242a1f1667417da06760f7af4febdc8060[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 18:32:48 2023 +0530
+
+    userSchema done
+
+[33mcommit d85f43b7575bdb6b455ca3280cbf074b7f9540e8[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 17:42:42 2023 +0530
+
+    npm issue resoluve
+
+[33mcommit 513596ce86df878b7f173656342c6356028323f7[m
+Author: mavmodz <maverickjetman07@gmail.com>
+Date:   Fri Aug 25 17:42:08 2023 +0530
+
+    Package updates
+
+[33mcommit c06a60caac3a66f352ecb8d155cd6ea8682b4ff2[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 17:41:15 2023 +0530
+
+    controllers
+
+[33mcommit baec30663006e9b792035f62e00ba16a6e487b3f[m
+Author: mavmodz <maverickjetman07@gmail.com>
+Date:   Fri Aug 25 17:39:46 2023 +0530
+
+    Register page added
+
+[33mcommit 5ad1596f69b4e94551701785794b432e73cf13fa[m
+Author: mavmodz <maverickjetman07@gmail.com>
+Date:   Fri Aug 25 17:24:18 2023 +0530
+
+    Minor Updates
+
+[33mcommit a335a17754407836e0a1799543758a13098c883b[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 17:24:16 2023 +0530
+
+    schema update
+
+[33mcommit d43a6618879a16a7690ecdb0ef4f648237ab7be8[m[33m ([m[1;31morigin/schema[m[33m)[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 17:13:41 2023 +0530
+
+    backend satrt
+
+[33mcommit f101818288d54af8176f227cf89619e028068762[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 17:13:22 2023 +0530
+
+    backend start
+
+[33mcommit 59ae3fbb21009bf40e11325bdf862cbf1a246aee[m[33m ([m[1;31morigin/login[m[33m)[m
+Author: Gautam-2407 <gautambhatia2407@gmail.com>
+Date:   Fri Aug 25 15:05:35 2023 +0530
+
+    changes
