@@ -36,11 +36,15 @@ height: 100vh;
         margin-left:100px;
     align-items: center;
 }
+.login-head > h2{
+    margin-top:100px;
+}
 
 
 .login-right > h2{
     font-size: 3rem;
     text-align: center;
+    
     color:var(--header-color1)
 }
 .login-right > h5{
@@ -104,7 +108,7 @@ height: 100vh;
     background-image: url("https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/819/article_full%401x.jpg ");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height:500px;
+    height:550px;
     width:600px;
     
 }

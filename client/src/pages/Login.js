@@ -29,7 +29,7 @@ const Login = () => {
                 <div className="login-logo">
                     <p>MedicalMaster</p>
                 </div>
-                <div classname="login-head">
+                <div classname="login-head" style={{marginTop:"70px", marginLeft:"70px"}}>
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
