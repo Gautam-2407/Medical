@@ -1,0 +1,79 @@
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --button-background:#EB4335;
+  }
+
+
+
+
+.login-container {
+width: 100vw;
+height: 100vh;
+}
+
+.login-wrapper {
+    display: flex;
+    
+}
+.login-right{
+    margin-top:150px;
+    margin-left:1000px;
+}
+
+.login-right > h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.login-right > h5{
+    font-size:1rem;
+    color:var(--secondary-color);
+    text-align:center;
+    margin-top: -30px; 
+}
+.input-field{
+    margin-top:50px;
+}
+
+.input-field1{
+    margin-top:20px;
+}
+.input-field1 > input{
+    height:40px;
+    width:320px;
+    border-radius:10px ;    
+  }
+
+
+.input-field > input{
+  height:40px;
+  width:320px;
+  border-radius:10px ;    
+}
+
+.gogle-input{
+    margin-top:50px; 
+  
+}
+
+.gogle-input > input{
+   height:40px;
+    width:320px;
+    background-color: white;;
+    border-radius:10px;
+}
+
+.button-field{
+   
+    margin-top:30px;
+}
+.button-field > input{
+   width:320px;
+   height:40px;
+    background-color:var(--button-background);
+    border-radius: 18px;
+}
+.button-field > input > p {
+ text-align: center;
+}
