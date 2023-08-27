@@ -8,4 +8,41 @@
     width:100%;
     background-color: black;
     color:aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    width:25%;
+}
+.header-center{
+    display: flex;
+    margin-left:180px;
+    align-items: center;
+    width:50%;
+    background:rgb(157, 157, 157);
+    border-radius: 10px;
+}
+.header-one{
+    display: flex;
+    margin-left:12px;
+}
+
+
+ #link{
+    
+    text-decoration: none;
+    color:white; 
+}
+.header-left{
+    display: flex;
+    margin-left: 180px;
+    width: 25%;
+}
+.header-end{
+    padding: 9px;
+    background:black;
+    border-radius: 15px;
+    margin-left: 9px;
+    align-items: center;
 }
