@@ -25,16 +25,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         required: true,
-    },
-    history:{
-        type: String,
-        unique: true,
-        required: true,
-    },
-    disease:{
-        type: String,
-        unique: true,
-        required: true,
     }
 
 });
