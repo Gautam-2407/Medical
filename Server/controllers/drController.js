@@ -1,9 +1,9 @@
 const drs = require("../models/drSchema");
 
 exports.drregister = async (req, res) => {
-    const {name, phone, email,dob, gender,lisence,exp, speciality }=req.body;
+    const {name, phone, email, birth, gender,lisence,exp, speciality }=req.body;
 
-    if (!name || !phone || !email|| !dob|| !gender|| !lisence|| !exp ||!speciality){
+    if (!name || !phone || !email|| !birth || !gender|| !lisence|| !exp ||!speciality){
       return  res.status(401).json({message:"Please Fill all Fields"})
     }
 
@@ -20,7 +20,7 @@ exports.drregister = async (req, res) => {
           name,
           phone,
           email,
-          dob,
+          birth,
           gender,
           lisence,
           exp,

@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
         required: true,
     },
-    dob:{
+    birth:{
         type: String,
         unique: true,
         required: true,
