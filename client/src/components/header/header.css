@@ -10,10 +10,12 @@
     color:aliceblue;
     display: flex;
     align-items: center;
+   
 }
 
 .header-logo{
     width:25%;
+    margin-left:15px;
 }
 .header-center{
     display: flex;
@@ -46,3 +48,65 @@
     margin-left: 9px;
     align-items: center;
 }
+
+.header-end-end{
+    background:blue;
+    border-radius: 15px;
+    margin-left: 9px;
+    align-items: center;
+    padding: 9px;
+}
+
+.headerone{
+  height:100px;
+  width:100%;
+  background-color:black;
+  color:white;
+  display: flex;
+  align-items: center;
+}
+
+.headerone-start{
+    width:50%;
+    margin-left:15px;
+}
+
+
+.headerone-start > p{
+ font-size: 1.5rem;
+ color:grey;
+}
+
+.headerone-center{
+    width:10%;
+    text-align:center;
+    background: rgb(157, 157, 157);
+    border-radius: 20px;
+    padding:5px;
+}
+.headerone-end{
+    width:40%;
+    display: flex;
+    margin-left:50px;
+}
+.headerone-end1{
+    background:rgb(157, 157, 157);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.headerone-end1 >p{
+ margin-left:10px;
+}
+.headerone-end1 >p > h4{
+    margin-left:5px;
+   }
+
+   .headertwo-container{
+    width:100%;
+    height:100px;
+    background:black;
+    align-items: center;
+    color:white;
+   }
