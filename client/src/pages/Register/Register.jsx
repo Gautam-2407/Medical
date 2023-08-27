@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { User, Mail, Phone, CalendarDays } from 'lucide-react';
-import { registerfunction } from "../Services/api";
+import { registerfunction } from "../../Services/api";
 import "./register.css";
 
 function Register() {
