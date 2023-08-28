@@ -5,6 +5,7 @@ In the project directory, you can run:
 ### `npm install`
 ### `npm start`
 ### `npm run build`
+### `npm i react-router-dom`
 
 ### Server (Backend)
 
