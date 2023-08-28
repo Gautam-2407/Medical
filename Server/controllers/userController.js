@@ -1,10 +1,10 @@
 const users = require("../models/userSchema");
 
 exports.userregister = async (req, res) => {
-    const {name, phone, email,dob, gender }=req.body;
+    const {name, phone, email, birth, gender }=req.body;
 
-    if (!name || !phone || !email|| !dob|| !gender){
-      return  res.status(401).json({message:"Please enter your name"})
+    if (!name || !phone || !email|| !birth|| !gender){
+      return  res.status(401).json({message:"Fill all fields"})
     }
 
     try{
@@ -18,9 +18,8 @@ exports.userregister = async (req, res) => {
           name,
           phone,
           email,
-          dob,
+          birth,
           gender
-
         });
         const storeData= await newuser.save();
         res.status(200).json(storeData);

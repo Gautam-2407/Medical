@@ -17,7 +17,7 @@ const drSchema = new mongoose.Schema({
         required: true,
     },
 
-    dob:{
+    birth:{
         type: String,
         required: true,
     },
