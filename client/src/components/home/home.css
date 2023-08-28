@@ -1,0 +1,37 @@
+.home-container{
+    width:20%;
+    height:50px;
+   display: flex;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+.home-all{
+    align-items: center;
+}
+
+#all{
+    text-decoration: none;
+    margin-left:30px;
+    color:white;
+}
+#test{
+    text-decoration: none;
+    margin-left:30px;
+    color:white;
+}
+#docs{
+    text-decoration: none;
+    margin-left:30px;
+    color:white;
+}
+#advice{
+    text-decoration: none;
+    margin-left:30px;
+    color:white;
+}
+#labs{
+    text-decoration: none;
+    margin-left:30px;
+    color:white;
+}

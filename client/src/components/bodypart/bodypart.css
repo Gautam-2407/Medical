@@ -1,0 +1,13 @@
+.bodyicon-container{
+    width:10%;
+    height:40px;
+    display:flex;
+    margin:30px;
+    background-color: rgb(38, 35, 35);
+    border-radius:10px;
+   }
+   .bodyicon{
+  border-radius:5px;
+ padding:9px;
+   }
+   
