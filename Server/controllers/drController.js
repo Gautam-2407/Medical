@@ -1,14 +1,14 @@
 const drs = require("../models/drSchema");
 
-exports.drregister = async (req, res) => {
-    const {name, phone, email, birth, gender,lisence,exp, speciality }=req.body;
+exports.drform = async (req, res) => {
+    const {license, exp, speciality,resume }=req.body;
 
-    if (!name || !phone || !email|| !birth || !gender|| !lisence|| !exp ||!speciality){
+    if (!license|| !exp ||!speciality || !resume){
       return  res.status(401).json({message:"Please Fill all Fields"})
     }
 
     try{
-      const predr = await drs.findOne({phone:phone});
+      const predr = await drs.findOne({license:license});
 
       if (predr){
         return   res.status(200).json("Dr already exist")
@@ -16,20 +16,16 @@ exports.drregister = async (req, res) => {
       
       else{
         console.log ("data started entering");
-        const newdr = new drs({
-          name,
-          phone,
-          email,
-          birth,
-          gender,
-          lisence,
+        const newdata = new drs({
+          license,
           exp,
           speciality,
+          gender,
 
         });
         console.log("data enterd");
-        const storeData= await newdr.save();
-        res.status(200).json(storeData);
+        const stored= await newdata.save();
+        res.status(200).json(stored);
       }
     } catch (error) {
         res.status(400).json({ error: "Invalid Details", error });
@@ -38,26 +34,26 @@ exports.drregister = async (req, res) => {
   
   
   //CHECK PHONE INFORMATION IN DATABASE
-  exports.drlogin = async (req, res) => {
-     const { phone } = req.body;
+  // exports.drlogin = async (req, res) => {
+  //    const { phone } = req.body;
   
-     const dr = await drs.findOne({ phone: phone });
+  //    const dr = await drs.findOne({ phone: phone });
      
-     try{
+  //    try{
 
-       if (!dr) {
-         return res.status(201).json({message:"Phone No not found"})
-        }
-        else {
-          res.status(201).json({ exists: true ,dr});
-          console.log("Phone No. Match");
-        }
-      }
+  //      if (!dr) {
+  //        return res.status(201).json({message:"Phone No not found"})
+  //       }
+  //       else {
+  //         res.status(201).json({ exists: true ,dr});
+  //         console.log("Phone No. Match");
+  //       }
+  //     }
     
-    catch (error) {
-      console.error("Error while querying MongoDB:", error);
-      res.status(500).json({ error: "Unable to connect with DB" });
-    }
+  //   catch (error) {
+  //     console.error("Error while querying MongoDB:", error);
+  //     res.status(500).json({ error: "Unable to connect with DB" });
+  //   }
     
-  };
+  // };
   
