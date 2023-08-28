@@ -1,7 +1,7 @@
 import React from 'react'
  import { useState } from 'react';
 import './login.css'
-import { loginfunction } from '../../Service/api';
+import { loginfunction } from '../../Services/api';
 const Login = () => {
 
     const [username, setusername]=useState("");

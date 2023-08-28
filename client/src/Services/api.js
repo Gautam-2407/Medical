@@ -12,7 +12,7 @@ export const registerfunction = async(name, phone, email, birth, gender) => {
 }
 
 
-export const phoneValidation = async(phone) => {
+export const loginfunction = async(phone) => {
     try {
         const response = await commonrequest("POST", `${backend_url}/user/phone`, {phone: phone});
         return response.data;
