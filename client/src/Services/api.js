@@ -14,7 +14,7 @@ export const registerfunction = async(name, phone, email, birth, gender) => {
 
 export const loginfunction = async(phone) => {
     try {
-        const response = await commonrequest("POST", `${backend_url}/user/phone`, {phone: phone});
+        const response = await commonrequest("POST", `${backend_url}/user/login`, {phone: phone});
         return response.data;
     }
     catch(error) {
