@@ -7,10 +7,10 @@ function Home() {
     <div className='home-container'>
           <div className='home-all'>
             <Link to="all" id="all">All</Link>
-            <Link to="test"id="test">Test</Link>
-            <Link to="docs" id="docs">Docs</Link>
-            <Link to="advice" id="advice">Advice</Link>
-            <Link to="labs" id="labs">Labs</Link>
+            <Link to="test"id="all">Test</Link>
+            <Link to="docs" id="all">Docs</Link>
+            <Link to="advice" id="all">Advice</Link>
+            <Link to="labs" id="all">Labs</Link>
           </div>
         </div>
   )

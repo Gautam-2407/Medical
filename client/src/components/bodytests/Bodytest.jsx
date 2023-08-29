@@ -7,12 +7,12 @@ function Bodytest() {
     <div className="bodytest-container">
       <div className="bodytest">
     <Link to="heart" id="heart">Heart</Link>
-    <Link to="lungs" id="lungs">Lungs</Link>
-    <Link to="head" id="head">Head</Link>
-    <Link to="legs" id="legs">Legs</Link>
-    <Link to="stomach" id="stomach">Stomach</Link>
-    <Link to="eyes" id="eyes">Eyes</Link>
-    <Link to="dna" id="dna">DNA</Link>
+    <Link to="lungs" id="heart">Lungs</Link>
+    <Link to="head" id="heart">Head</Link>
+    <Link to="legs" id="heart">Legs</Link>
+    <Link to="stomach" id="heart">Stomach</Link>
+    <Link to="eyes" id="heart">Eyes</Link>
+    <Link to="dna" id="heart">DNA</Link>
     </div>
   </div>
   )

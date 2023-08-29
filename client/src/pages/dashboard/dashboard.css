@@ -1,0 +1,8 @@
+.bodytest-dask{
+    display: grid;
+    grid-template-columns: 40% 20% 20% ;
+    background-color: black;
+    justify-content: space-between;
+
+}
+

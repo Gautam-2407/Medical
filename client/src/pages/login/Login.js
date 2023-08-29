@@ -37,7 +37,7 @@ const Login = () => {
                 <div className="login-logo">
                     <p>MedicalMaster</p>
                 </div>
-                <div className="login-head" style={{marginTop:"70px", marginLeft:"150px"}}>
+                <div className="login-head" style={{marginTop:"100px", marginLeft:"150px"}}>
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
