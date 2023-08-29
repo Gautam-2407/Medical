@@ -18,12 +18,12 @@ height: 100vh;
 .login-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    
+    gap: 2rem;
+    height: 100vh;
 }
 
 .login-logo{
     font-size:1.5rem;
-    text-shadow: 2px 6px 4px red;
     font-weight: bolder;
 }
 
@@ -32,11 +32,10 @@ height: 100vh;
 }
 
 .login-right{
-    margin-top:150px;
-    text-align: start;
-    align-items: center;
+display: flex;
+flex-direction: column;
+gap: 5rem;
 }
-
 
 
 .login-right > h2{
@@ -80,7 +79,7 @@ height: 100vh;
 .gogle-input > input{
    height:40px;
     width:320px;
-    background-color: white;;
+    background-color: white;
     border-radius:10px;
     border: 1px solid #EDEDED;
 }
@@ -103,11 +102,10 @@ height: 100vh;
 
 
 .login-left{
-    margin-left:700px;
+   text-align: end;
     font-size: 1rem;
     height:30px;
-    width:80px;
     text-decoration: underline;
-}
+} 
 
 
