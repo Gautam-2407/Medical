@@ -102,29 +102,7 @@ height: 100vh;
  text-align: center;
 }
 
-.login{
-    display: flex;
-    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow: 5px 9px 8px rgba(0, 0, 0, 0.2);
-    height:600px;
-    width:900px;
-    border-radius:40px;
-    margin-left:30px;
-    margin-top:30px;
-    clip-path: polygon(
-        -1px 0, /* Top left corner */
-        calc(100% - 20px) 0, /* Top right corner */
-        100% 20px, /* Bottom right corner */
-        100% calc(100% - 442px), /* Bottom left corner */
-        calc(99% - 40px) 100%, /* Inner bottom right */
-        20px 100%, /* Inner bottom left */
-        0 calc(100% - 16px), /* Inner top left */
-        0 134px /* Inner top right */
-      
-      );
-}
+
 
 .login-left{
     margin-left:700px;
