@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import './header.css';
-import { LayoutDashboard,ClipboardList, CalendarDays, MessageCircle,Settings,Phone,Bell,User,Heart,Wheat,Eye,Candy,View} from "lucide-react";
+import { LayoutDashboard,ClipboardList, CalendarDays, MessageCircle,Settings,Phone,Bell,User} from "lucide-react";
 import { Link } from 'react-router-dom';
 
 function Header() {
