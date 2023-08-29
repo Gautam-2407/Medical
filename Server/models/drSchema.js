@@ -16,7 +16,7 @@ const drSchema = new mongoose.Schema({
     },
     resume: {
         type : String,
-        
+        required: true,
     }
 
 });

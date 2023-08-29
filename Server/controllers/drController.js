@@ -20,7 +20,7 @@ exports.drform = async (req, res) => {
           license,
           exp,
           speciality,
-          gender,
+          resume
 
         });
         console.log("data enterd");
@@ -31,29 +31,4 @@ exports.drform = async (req, res) => {
         res.status(400).json({ error: "Invalid Details", error });
       }
   };
-  
-  
-  //CHECK PHONE INFORMATION IN DATABASE
-  // exports.drlogin = async (req, res) => {
-  //    const { phone } = req.body;
-  
-  //    const dr = await drs.findOne({ phone: phone });
-     
-  //    try{
-
-  //      if (!dr) {
-  //        return res.status(201).json({message:"Phone No not found"})
-  //       }
-  //       else {
-  //         res.status(201).json({ exists: true ,dr});
-  //         console.log("Phone No. Match");
-  //       }
-  //     }
-    
-  //   catch (error) {
-  //     console.error("Error while querying MongoDB:", error);
-  //     res.status(500).json({ error: "Unable to connect with DB" });
-  //   }
-    
-  // };
   
