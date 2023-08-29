@@ -22,20 +22,18 @@ height: 100vh;
 }
 
 .login-logo{
-    margin-top:-120px;
     font-size:1.5rem;
-    margin-left: -75px;
     text-shadow: 2px 6px 4px red;
     font-weight: bolder;
 }
 
 .login-head{
-    margin-left:100px;
+    text-align: center;
 }
 
 .login-right{
     margin-top:150px;
-    margin-left:100px;
+    text-align: start;
     align-items: center;
 }
 
