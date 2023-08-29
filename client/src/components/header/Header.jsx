@@ -53,7 +53,7 @@ function Header() {
       <User size={20} color="#ffffff" strokeWidth={1.5}   onClick={Bgchange}/>
       </div>
       </div>
-      
+
       </div>
       <div className="headerone">
         <div className="headerone-start">
@@ -96,25 +96,8 @@ function Header() {
         </div>
       </div>
       <div className="headertwo-container">
-        <div className="headertwo-starts">
         <div className="headertwo-start">
           <p>Heart</p>
-          <p>Lung</p>
-          <p>Head</p>
-          <p>Legs</p>
-          <p>Stomach</p>
-          <p>Eyes</p>
-          <p>DNA</p>
-        </div>
-        </div>
-        <div className="headertwo-center">
-          <div className="headertwo-bg">
-          <Heart color="#ffffff" strokeWidth={1.5} />
-          <Wheat color="#ffffff" strokeWidth={1.5} />
-          <Eye color="#ffffff" strokeWidth={1.5} />
-          <Candy color="#ffffff" strokeWidth={1.5} />
-          <View color="#ffffff" strokeWidth={1.5} />
-          </div>
         </div>
       </div>
       </>
