@@ -1,5 +1,6 @@
-import Login from './pages/Login/Login';
+import Login from './pages/login/Login';
 import Register from './pages/Register/Register';
+import Error from './pages/Error/Error';
 import { Routes, Route } from 'react-router-dom';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
@@ -10,6 +11,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path='/register' element={<Register />} />
+
+        {/* Fallback Route */}
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
