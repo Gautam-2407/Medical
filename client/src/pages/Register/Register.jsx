@@ -94,10 +94,7 @@ function Register() {
                       <input type="radio" name="gender" id="female" value="female" checked={gender === 'female'} onChange={(e) => setGender(e.target.value)} />
                       <img src={PATIENT} alt="patientimage" />
                     </label>
-                    <label className="radio-label">
-                      <input type="radio" name="gender" id="others" value="others" checked={gender === 'others'} onChange={(e) => setGender(e.target.value)} />
-                      {/* <img src={IMG} alt="userimage" /> */}
-                    </label>
+
                   </div>
                 </>
               )}
