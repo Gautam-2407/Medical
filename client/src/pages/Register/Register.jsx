@@ -10,13 +10,14 @@ function Register() {
   const [phone, setPhone] = useState('');
   const [birth, setBirth] = useState('');
   const [gender, setGender] = useState('');
+  const [role, setRole] = useState('');
   const [count, setCount] = useState(1);
 
   const handleClick = async (e) => {
     e.preventDefault();
     console.log("Clicked Successfully");
     try {
-      const response = await registerfunction(name, email, phone, birth, gender);
+      const response = await registerfunction(name, email, phone, birth, gender,role);
       console.log(response);
     }
 
@@ -35,22 +36,40 @@ function Register() {
             <h1>Create new account  </h1>
             <span>Already A Member?</span>
             <div className="form-wrapper">
-
-              {count === 1 && (
+            {count === 1 && (
+            <>
+                  <div className="text-row">
+                  <div className="text-field radio">
+                    <label className="radio-label">
+                      <input type="radio" name="role" id="doctor" value="doctor" checked={role === 'doctor'} onChange={(e) => setRole(e.target.value)} />
+                      <span className="radio-button"></span> Doctor
+                      
+                    </label>
+                    </div>
+                    <div className="text-field radio">
+                    <label className="radio-label">
+                      <input type="radio" name="role" id="patient" value="patient" checked={role === 'patient'} onChange={(e) => setRole(e.target.value)} />
+                      <span className="radio-button"></span> Patient
+                    </label>
+                    </div>
+                  </div>
+                </>
+            )}
+              {count === 2 && (
                 <>
                   <div className="text-row">
                     <div className="text-field">
-                      <input type="text" name="name" id="name" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
+                      <input type="text" name="name" id="name" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} required/>
                       <User size={32} color="#7CE395" strokeWidth={1.5} />
                     </div>
                     <div className="text-field">
-                      <input type="tel" name="phone" id="phone" placeholder='Phone' maxLength="10" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                      <input type="tel" name="phone" id="phone" placeholder='Phone' maxLength="10" value={phone} onChange={(e) => setPhone(e.target.value)}/>
                       <Phone size={32} color="#7CE395" strokeWidth={1.5} />
                     </div>
                   </div>
                 </>
               )}
-              {count === 2 && (
+              {count === 3 && (
                 <>
                   <div className="text-field column">
                     <input type="email" name="email" id="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -62,7 +81,7 @@ function Register() {
                   </div>
                 </>
               )}
-              {count === 3 && (
+              {count === 4 && (
                 <>
                   <div className="text-field radio">
                     <label className="radio-label">
@@ -91,8 +110,9 @@ function Register() {
                   />
                 )}
               </div>
+
               <div className="form-submit">
-                {count < 3 ? (
+                {count < 4 ? (
                   <input
                     type="submit"
                     className="my-form__button"
