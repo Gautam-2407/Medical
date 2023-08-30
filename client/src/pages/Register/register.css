@@ -114,6 +114,7 @@ h1 {
 .text-field input[type="radio"] {
     height: 25px;
     margin: 0;
+    display: none;
 }
 
 .radio-label {
@@ -121,6 +122,11 @@ h1 {
     align-items: center;
     margin-right: 25px;
     color: var(--background-white);
+}
+
+.radio-label > img {
+    width: 100px;
+    height: 100px;
 }
 
 .radio-button {
@@ -159,6 +165,7 @@ h1 {
     background-color: var(--hover-effect);
     color: var(--background-white);
 }
+
 
 @media (max-width: 768px) {
     .register-wrapper {
