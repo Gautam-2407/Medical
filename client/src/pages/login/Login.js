@@ -27,12 +27,9 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="login-wrapper">
-                <div className="login">
                 <div className='login-left'>
                     <h4>Sing in</h4>
-                </div>
-                </div>
-
+                 </div>
                 <div className='login-right'>
                 <div className="login-logo">
                     <p>MedicalMaster</p>
