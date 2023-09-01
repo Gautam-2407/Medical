@@ -1,8 +1,8 @@
 .headerone{
     height:100px;
     width:100%;
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:black;
     display: flex;
     align-items: center;
   }
@@ -17,11 +17,15 @@
    font-size: 1.5rem;
    color:grey;
   }
+
+  .headerone-start > h2{
+    color:black;
+  }
   
   .headerone-center{
       width:10%;
       text-align:center;
-      background: rgb(157, 157, 157);
+      background: #f7f7f2;
       border-radius: 20px;
       padding:5px;
   }
@@ -31,7 +35,7 @@
       margin-left:50px;
   }
   .headerone-end1{
-      background:rgb(157, 157, 157);
+      background:#f7f7f2;
       text-align: center;
       padding: 10px;
       border-radius: 10px;

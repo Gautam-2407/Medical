@@ -4,11 +4,16 @@ import Calander from '../../components/calander/Calander';
 import Bodytest from '../../components/bodytests/Bodytest';
 import Bodypart from '../../components/bodypart/Bodypart';
 import Home from '../../components/home/Home';    
+import Sideheader from  '../../components/Sideheader/Sideheader';
 import './dashboard.css'
 function Dashboard() {
   return (<>
+  <div className="dashboard"> 
     <div className="header">
       <Header />
+    </div>
+    <div className="sideheader">
+      <Sideheader />
     </div>
     <div className="calander">
         < Calander />
@@ -24,7 +29,7 @@ function Dashboard() {
            <Home />
         </div>
     </div>
-    
+    </div>
   
     </>
   )

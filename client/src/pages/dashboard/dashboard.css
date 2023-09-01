@@ -1,8 +1,28 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --button-background:#EB4335;
+    --header-color: #565657;
+    --header-color1:#1C1B1C;
+    --header-background:white;
+    --side-headerbg:#f8f8f4;
+  }
+
+
 .bodytest-dask{
     display: grid;
-    grid-template-columns: 40% 20% 20% ;
-    background-color: black;
+    grid-template-columns: 40% 20% 30% ;
+    background-color:var(--header-background);
     justify-content: space-between;
 
+}
+.Calander{
+    display:grid;
+    grid-template-columns:80%;
+    
+}
+
+.calander{
+    background-color:var(--header-background);
 }
 

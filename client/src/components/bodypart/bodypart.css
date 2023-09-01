@@ -1,3 +1,5 @@
+
+
 .bodyicon-container{
     width:100%;
     display: inline-flex;
@@ -16,3 +18,8 @@
     width: 100vw;
    }
    
+   #heart{
+    background-color: white;
+    border-radius: 15px;
+    padding:3px;
+   }
