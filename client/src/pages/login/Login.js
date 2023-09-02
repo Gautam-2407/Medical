@@ -12,11 +12,8 @@ const Login = () => {
          e.preventDefault();
          console.log("button clicked");
         try{
-            
             const response = await loginfunction( username, contact);
-            console.log(response);
-             
-            
+            console.log(response);   
         }
         catch(error) {
             console.log("error");

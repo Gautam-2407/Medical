@@ -6,7 +6,7 @@ function Bodypart() {
   return (
     <div className="bodyicon-container">
     <div className="bodyicon"> 
-  <Heart size={20} color="black"  id="heart" />
+  <Heart size={20} color="black"  id="hearts" />
   </div>
   <div className="bodyicon"> 
   <Brain size={20} color="#ffffff" />
