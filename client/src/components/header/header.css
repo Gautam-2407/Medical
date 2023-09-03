@@ -40,11 +40,18 @@
     padding:6px;
 }
 
-#active{
-    background:var(--center-active);
+.header-one:hover  {
+    background-color:#1C1B1C;
+    color:white;
     padding:8px;
     border-radius: 10px;
 }
+
+/* #active{
+    background:var(--center-active);
+    padding:8px;
+    border-radius: 10px;
+} */
 .header-one{
     display: flex;
     margin-left:12px;
