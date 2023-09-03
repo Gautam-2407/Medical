@@ -2,6 +2,9 @@ import React from 'react'
  import { useState } from 'react';
 import './login.css'
 import { loginfunction } from '../../Service/api';
+import { ArrowRight, ArrowLeft }  from "lucide-react";
+
+
 const Login = () => {
 
     const [username, setusername]=useState("");
@@ -26,6 +29,14 @@ const Login = () => {
             <div className="login-wrapper">
                 <div className='login-left'>
                     <h4>Sing in</h4>
+                    <div className="arrow">     
+                    <div className="arrowleft">
+                        <button><ArrowLeft size={10} color="#fafafa" /></button>
+                    </div>
+                    <div className="arrowright">
+                    <button><ArrowRight size={10} color="#fafafa" /></button>
+                    </div>
+                    </div>
                  </div>
                 <div className='login-right'>
                 <div className="login-logo">
