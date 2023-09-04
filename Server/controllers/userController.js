@@ -3,17 +3,21 @@ const users = require("../models/userSchema");
 exports.userregister = async (req, res) => {
     const {name, phone, email, birth, gender, role }=req.body;
 
-    if (!name || !phone || !email|| !birth|| !gender || !role ){
-      return  res.status(401).json({message:"Fill all fields"})
+    if (!name || !phone || !email|| !birth|| !gender || !role )
+    {
+      res.status(400).json({ error: "Fill all Fields" });
     }
-
+    
     try{
       const preuser = await users.findOne({phone:phone});
-
+      console.log("try");
       if (preuser){
-        return   res.status(200).json("User already exist")
+        console.log("2try");
+        res.status(200).json("User already exist")
+        console.log("3try");
       }
       else{
+        console.log("4try");
         const newuser = new users({
           name,
           phone,
@@ -22,6 +26,7 @@ exports.userregister = async (req, res) => {
           gender,
           role
         });
+        console.log("5try");
         const storeData= await newuser.save();
         res.status(200).json(storeData);
       }
