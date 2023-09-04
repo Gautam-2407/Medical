@@ -2,7 +2,7 @@
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
-    --button-background:#EB4335;
+    --button-backgr:#2196F3;
     --header-color: #565657;
     --header-color1:#1C1B1C;
     --button-hover:green;
@@ -94,20 +94,21 @@ height: 100vh;
     margin-top:30px;
 }
 
-.button-field > input:hover{     
-   background-color: var( --button-hover);
-   color:white;
-   opacity: 0.6;
-   cursor: pointer;
-   box-shadow: 2px 3px black;
+.button-field > input:hover{ 
+    box-shadow: 0 0 0 3px #2195f360;
+  color: #ffffff;
+  background-color:var(--button-backgr)
 }
+
 
 .button-field > input{
    width:320px;
    height:40px;
-    background-color:var(--button-background);
+    background-color:#55c2da;
     border-radius: 18px;
     border:1px solid transparent;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
 }
 
 .button-field > input > p {

@@ -18,8 +18,9 @@ const Login = () => {
          e.preventDefault();
          console.log("button clicked");
         try{
-            const response = await loginfunction( otp, contact);
-            console.log(response);   
+            const response = await loginfunction( contact, otp);
+            console.log("response");
+               
         }
         catch(error) {
             console.log("error");
