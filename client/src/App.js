@@ -3,7 +3,7 @@ import './App.css';
 import {Routes, Route } from "react-router-dom";
 import Dashboard from './pages/dashboard/Dashboard';
 import Home from './components/home/Home';
-import Date from  "./Date";
+import Calendar from './components/Dashboardcalander/Calander';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/login" Component={Login} />
         <Route path="/dashboard" Component={Dashboard} />
         <Route path="/Home" Component={Home} /> 
-        <Route path="/Date" Component={Date} />
+        <Route path="/Calendar" Component={Calendar} />
       </Routes>
      
     </div>

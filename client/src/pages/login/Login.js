@@ -2,7 +2,8 @@ import React from 'react'
  import { useState } from 'react';
 import './login.css'
 import { loginfunction } from '../../Service/api';
-import { ArrowRight, ArrowLeft }  from "lucide-react";
+import { ArrowRight, ArrowLeft,  }  from "lucide-react";
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -28,13 +29,13 @@ const Login = () => {
         <div className="login-container">
             <div className="login-wrapper">
                 <div className='login-left'>
-                    <h4>Sing in</h4>
+                    <Link to="Sing in" id="sing">Sing in</Link>
                     <div className="arrow">     
                     <div className="arrowleft">
-                        <button><ArrowLeft size={10} color="#fafafa" /></button>
+                        <button onClick={()=>alert("Please fill these form")}><ArrowLeft size={10} color="#fafafa" /></button>
                     </div>
                     <div className="arrowright">
-                    <button><ArrowRight size={10} color="#fafafa" /></button>
+                    <button onClick={()=>alert("Please fill these form")}><ArrowRight size={10} color="#fafafa" /></button>
                     </div>
                     </div>
                  </div>

@@ -1,0 +1,13 @@
+#calanderarrow{
+    padding:5px;
+    background-color: rgb(206, 194, 194);
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+#calanderright{
+    padding:5px;
+    background:black;
+    border-radius:5px;
+    border: 1px solid transparent;
+}
