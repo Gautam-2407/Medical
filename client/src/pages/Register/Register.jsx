@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { User, Mail, Phone, CalendarDays } from 'lucide-react';
 import { registerfunction } from "../../Services/api";
-import DOC from "../../Components/assets/images/user-doctor-solid.svg";
-import PATIENT from "../../Components/assets/images/bed-pulse-solid-light.svg";
+// import DOC from "../../Components/assets/images/user-doctor-solid.svg";
+// import PATIENT from "../../Components/assets/images/bed-pulse-solid-light.svg";
 import "./register.css";
 
 function Register() {
@@ -88,11 +88,11 @@ function Register() {
                   <div className="text-field radio">
                     <label className="radio-label">
                       <input type="radio" name="gender" id="male" value="male" checked={gender === 'male'} onChange={(e) => setGender(e.target.value)} />
-                      <img src={DOC} alt="docimage" />
+                      {/* <img src={DOC} alt="docimage" /> */}
                     </label>
                     <label className="radio-label">
                       <input type="radio" name="gender" id="female" value="female" checked={gender === 'female'} onChange={(e) => setGender(e.target.value)} />
-                      <img src={PATIENT} alt="patientimage" />
+                      {/* <img src={PATIENT} alt="patientimage" /> */}
                     </label>
 
                   </div>

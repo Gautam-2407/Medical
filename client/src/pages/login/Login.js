@@ -1,7 +1,7 @@
 import React from 'react'
  import { useState } from 'react';
 import './login.css'
-import { loginfunction } from '../../Service/api';
+import { loginfunction } from '../../Services/api';
 import { ArrowRight, ArrowLeft, Facebook,Twitter,Linkedin, Instagram  }  from "lucide-react";
 import { Link } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
