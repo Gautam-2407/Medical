@@ -1,3 +1,9 @@
+
+
+.calander > h5{
+    text-align: center;
+}
+
 #calanderarrow{
     padding:5px;
     background-color: rgb(206, 194, 194);
@@ -7,7 +13,11 @@
 
 #calanderright{
     padding:5px;
-    background:black;
-    border-radius:5px;
+    background:rgb(206, 194, 194);
+    border-radius:10px;
     border: 1px solid transparent;
+}
+
+.calendar-header{
+    display:flex;
 }

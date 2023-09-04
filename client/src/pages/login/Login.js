@@ -2,13 +2,15 @@ import React from 'react'
  import { useState } from 'react';
 import './login.css'
 import { loginfunction } from '../../Service/api';
-import { ArrowRight, ArrowLeft,  }  from "lucide-react";
+import { ArrowRight, ArrowLeft, Facebook,Twitter,Linkedin, Instagram  }  from "lucide-react";
 import { Link } from 'react-router-dom';
+import Divider from '@mui/material/Divider';
+
 
 
 const Login = () => {
 
-    const [username, setusername]=useState("");
+    const [otp, setotp]=useState("");
     const [contact, setcontact]=useState("");
     
 
@@ -16,7 +18,7 @@ const Login = () => {
          e.preventDefault();
          console.log("button clicked");
         try{
-            const response = await loginfunction( username, contact);
+            const response = await loginfunction( otp, contact);
             console.log(response);   
         }
         catch(error) {
@@ -47,19 +49,32 @@ const Login = () => {
                     <h2>Login Page</h2>
                     <h5>Welcomt to login page</h5>
                     <div className="input-field">
-                        <input type="text" name="username" placeholder='Enter your username' value={username}  onChange={(e)=>setusername(e.target.value)}/>
+                    <input type="tel" name="contact" maxLength={10} placeholder='Enter your Number' value={contact} onChange={(e)=>setcontact(e.target.value)} />
                     </div>
                     <div className="input-field1">
-                        <input type="tel" name="contact" maxLength={10} placeholder='Enter your Number' value={contact} onChange={(e)=>setcontact(e.target.value)} />
+                        <input type="text" name="otp" maxLength={6} placeholder='Enter your OTP' value={otp} onChange={(e)=>setotp(e.target.value)} />
                     </div>
+                    
+                    <Divider  id="or">or</Divider>
+                
+                    
+
                     <div className="gogle-input">
                         <input type="submit" value="Login with GooGle" />
                     </div>
                     <div className="button-field">
-                     <input type="submit"   name="submit" value="Login" onClick={handle}  />
+                     <input type="submit"   name="submit" value="Login" onClick={handle}  id="login-button" />
                      <p>Create your Account?</p>
                     </div>
+                    <div className="login-icon">
+
+                    <Link to="fb">  <Facebook size={20}  id="fb"/></Link>
+                    <Link to="tw"><Twitter size={20}  id="fb"/></Link>
+                    <Link to="in"> <Linkedin size={20}  id="fb"/></Link>
+                     <Link to="insta"><Instagram size={20} color="#0d0c0c"  id="fb"/></Link>
                     </div>
+                    </div>
+                    
                 </div>
 
             </div>

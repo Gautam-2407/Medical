@@ -16,10 +16,12 @@ const Calendar = () => {
 
   return (
     <div className="calendar">
+      <h5>Month</h5>
       <div className="calendar-header">
         <button onClick={prevMonth} id="calanderarrow"><ArrowLeft size={10} color="white" /></button>
-        <h2>{format(currentDate, 'MMMM ')}</h2>
-        <h2>{format( currentDate,'yyyy')}</h2>
+        
+        <h2>{format(currentDate, 'MMMM')}</h2>
+        
         <button onClick={nextMonth} id="calanderright"><ArrowRight size={10} color="white" /></button>
       </div>
       
