@@ -6,6 +6,7 @@
     --header-color: #565657;
     --header-color1:#1C1B1C;
     --button-hover:green;
+    --login-box: #f5f5ef;
   }
 
 
@@ -23,31 +24,62 @@ height: 100vh;
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .login-wrapper {
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+}
 
 
 .login-logo{
     display: flex;
     font-size:1.5rem;
     font-weight: bolder;
-    margin-left:15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .login-head{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: var(--login-box);
+     height: 65vh;  
+     width: 450px;  
+    position: absolute;
+    align-items: center;
+    left: 25%;
+}
+
+.login-content{
     text-align: center;
 }
 
 .login-right{
+    justify-content: center;
     align-items: center;
-    display: flex;
     display: grid;
     grid-template-rows: 5% 90%;
+    position:relative;
 }
+
+
+
+/* @media (max-width: 968px) {
+    .login-left {
+      display: none;
+    }
+} */
 
 
 
 .login-right > h2{
     font-size: 3rem;
     text-align: center;
+    justify-content: center;
     color:var(--header-color1)
 }
 .login-right > h5{
@@ -56,9 +88,7 @@ height: 100vh;
     text-align:center;
     margin-top: -30px; 
 }
-.input-field{
-    margin-top:50px;
-}
+
 
 .input-field1{
     margin-top:20px;
@@ -80,7 +110,9 @@ height: 100vh;
   border: 1px solid #EDEDED;
 }
 
-
+.gogle-input{
+    margin-top:35px;
+}
 
 .gogle-input > input{
    height:40px;
@@ -95,17 +127,17 @@ height: 100vh;
 }
 
 .button-field > input:hover{ 
-    box-shadow: 0 0 0 3px #2195f360;
+    /* box-shadow: 0 0 0 3px #2195f360; */
   color: #ffffff;
-  background-color:var(--button-backgr)
+  background-color:#3291fe;
 }
 
 
 .button-field > input{
    width:320px;
    height:40px;
-    background-color:#55c2da;
-    border-radius: 18px;
+    background-color:#3E97FF;
+    border-radius: 5px;
     border:1px solid transparent;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
     cursor: pointer;
@@ -124,7 +156,7 @@ height: 100vh;
     text-decoration: underline;
     width: 88%;
     top: 16px;
-    position: relative;
+    position: absolute;
     
 }
 
@@ -133,15 +165,15 @@ height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    
+    position: relative;
 }
 
 .arrow{
     display: flex;
     align-items: bottom;
     justify-content: center;
-    position: relative;
-    top: 542px;
+    position: absolute;
+    bottom: 10px;
     width: 80%;
     justify-content: flex-end;
      gap:10px;
@@ -149,12 +181,13 @@ height: 100vh;
 
 #or{
     align-items: center;
-    height: 60px;
-    width: 90px;
+    height: 83px;
+    width: 286px;
     justify-content: center;
     display: inline-flex;
-    
 }
+    
+
 
 .arrowleft > button{
     height: 25px;
